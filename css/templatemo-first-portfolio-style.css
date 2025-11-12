@@ -662,7 +662,7 @@ strong {
   bottom: 0;
   right: 0;
   width: 50%;
-  height: 55%;
+  height: 40%;
   transform: rotate(-35deg) translateY(55px);
   transition: all ease 0.5s;
 }
