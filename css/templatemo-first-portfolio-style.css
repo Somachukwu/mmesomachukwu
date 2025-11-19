@@ -114,7 +114,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, .projects-title:hover {
   color: var(--secondary-color);
 }
 
@@ -485,7 +485,7 @@ strong {
 }
 
 .hero-title {
-	font-size: 44px;
+	font-size: 2em;
 }
 
 .hero h2 {
