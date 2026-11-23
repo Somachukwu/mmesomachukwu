@@ -1,0 +1,322 @@
+/*=======================================
+  DARK THEME TOGGLE BUTTON
+=========================================*/
+.theme-toggle-btn {
+  background: transparent;
+  border: 1.5px solid var(--white-color);
+  border-radius: 50px;
+  color: var(--white-color);
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+
+.theme-toggle-btn:hover {
+  background: var(--white-color);
+  color: var(--secondary-color);
+}
+
+/* On mobile nav (white bg), invert the button */
+@media screen and (max-width: 991px) {
+  .theme-toggle-btn {
+    border-color: var(--dark-color);
+    color: var(--dark-color);
+  }
+  .theme-toggle-btn:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #fff;
+  }
+}
+
+/* When sticky (white bg), invert the button */
+.is-sticky .theme-toggle-btn {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+.is-sticky .theme-toggle-btn:hover {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+
+/*=======================================
+  DARK THEME OVERRIDES  [data-theme="dark"]
+=========================================*/
+[data-theme="dark"] {
+  --white-color:           #1e2229;
+  --section-bg-color:      #161b22;
+  --dark-color:            #f0f4f8;
+  --p-color:               #adb5bd;
+  --border-color:          #30363d;
+  --featured-border-color: #58697a;
+}
+
+[data-theme="dark"] body {
+  background: #0d1117;
+}
+
+/* Preloader */
+[data-theme="dark"] .preloader {
+  background: #0d1117;
+}
+
+/* ---- Navbar ---- */
+[data-theme="dark"] .navbar .container {
+  background: rgba(22, 27, 34, 0.98);
+}
+
+[data-theme="dark"] .is-sticky,
+[data-theme="dark"] .is-sticky .navbar .container {
+  background: #161b22;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"] .is-sticky .navbar-brand,
+[data-theme="dark"] .is-sticky .navbar-brand:hover {
+  color: var(--dark-color);
+}
+
+[data-theme="dark"] .is-sticky .navbar-nav .nav-link {
+  color: var(--p-color);
+}
+
+[data-theme="dark"] .is-sticky .navbar .custom-btn {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+[data-theme="dark"] .navbar-nav .nav-link {
+  color: #c9d1d9;
+}
+
+/* Mobile nav */
+@media screen and (max-width: 991px) {
+  [data-theme="dark"] .navbar .container {
+    background: #161b22;
+  }
+  [data-theme="dark"] .navbar-brand,
+  [data-theme="dark"] .navbar-brand:hover {
+    color: #f0f4f8;
+  }
+  [data-theme="dark"] .navbar-toggler .navbar-toggler-icon,
+  [data-theme="dark"] .navbar-toggler .navbar-toggler-icon:before,
+  [data-theme="dark"] .navbar-toggler .navbar-toggler-icon:after {
+    background: #f0f4f8;
+  }
+  [data-theme="dark"] .theme-toggle-btn {
+    border-color: #f0f4f8;
+    color: #f0f4f8;
+  }
+}
+
+/* ---- Hero section ---- */
+[data-theme="dark"] .hero-title,
+[data-theme="dark"] .hero h2 {
+  background: #1e2229;
+  color: #f0f4f8;
+}
+
+[data-theme="dark"] .hero-image-wrap {
+  background: #1e2229;
+}
+
+/* ---- Profile / About ---- */
+[data-theme="dark"] .profile-thumb {
+  border-color: var(--border-color);
+  background: var(--white-color);
+}
+
+[data-theme="dark"] .profile-title {
+  border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .profile-small-title {
+  border-right-color: var(--border-color);
+  color: var(--secondary-color);
+}
+
+[data-theme="dark"] .profile-body p:nth-of-type(even) {
+  background: #252c35;
+}
+
+/* ---- Featured numbers ---- */
+[data-theme="dark"] .featured-border-bottom {
+  border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .featured-border-start {
+  border-left-color: var(--border-color);
+}
+
+/* ---- Services ---- */
+[data-theme="dark"] .services,
+[data-theme="dark"] .featured {
+  background: var(--section-bg-color);
+  border-top-color: var(--border-color);
+  border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .services-thumb {
+  background: #1e2229;
+  border-color: transparent;
+  color: var(--p-color);
+}
+
+[data-theme="dark"] .services-thumb h4,
+[data-theme="dark"] .services-thumb h5,
+[data-theme="dark"] .services-thumb h3 {
+  color: var(--dark-color);
+}
+
+[data-theme="dark"] .services-icon-wrap {
+  border-color: var(--border-color);
+}
+
+/* ---- Projects ---- */
+[data-theme="dark"] .projects-thumb {
+  background: #1e2229;
+  border-color: #30363d;
+}
+
+[data-theme="dark"] .projects-thumb:hover {
+  border-color: var(--secondary-color);
+}
+
+[data-theme="dark"] .projects-title {
+  color: #f0f4f8;
+}
+
+[data-theme="dark"] .projects-description {
+  color: var(--p-color);
+}
+
+[data-theme="dark"] .projects-tag {
+  color: var(--secondary-color);
+}
+
+/* ---- Contact ---- */
+[data-theme="dark"] .contact {
+  background: var(--section-bg-color);
+}
+
+[data-theme="dark"] .contact-info {
+  background: #1e2229;
+}
+
+[data-theme="dark"] .contact-info-border-start {
+  border-right-color: var(--border-color);
+  border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .custom-form .form-control {
+  background: #252c35;
+  border-color: #30363d;
+  color: var(--p-color);
+}
+
+[data-theme="dark"] .form-floating > label {
+  color: var(--p-color);
+}
+
+[data-theme="dark"] .form-check-input[type=checkbox] {
+  background: #252c35;
+  border-color: #30363d;
+}
+
+[data-theme="dark"] .custom-form .form-control:hover,
+[data-theme="dark"] .custom-form .form-control:focus {
+  background: #2a3240;
+  border-color: var(--secondary-color);
+}
+
+/* ---- Footer ---- */
+[data-theme="dark"] .site-footer {
+  background: #0d1117;
+  border-top-color: var(--border-color);
+}
+
+[data-theme="dark"] .site-footer-title {
+  color: var(--dark-color);
+}
+
+[data-theme="dark"] .copyright-text {
+  border-right-color: var(--border-color);
+}
+
+[data-theme="dark"] .footer-menu-link {
+  border-color: var(--border-color);
+  color: var(--p-color);
+}
+
+[data-theme="dark"] .footer-menu-link:hover {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #fff;
+}
+
+/* ---- Social icons ---- */
+[data-theme="dark"] .social-icon-link {
+  border-color: var(--border-color);
+  color: var(--dark-color);
+}
+
+[data-theme="dark"] .social-icon-link:hover {
+  background: var(--secondary-color);
+  border-color: transparent;
+  color: #fff;
+}
+
+/* ---- Section title badge ---- */
+[data-theme="dark"] .section-title-wrap {
+  background: var(--secondary-color);
+}
+
+/* ---- General text ---- */
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: var(--dark-color);
+}
+
+[data-theme="dark"] p,
+[data-theme="dark"] ul li {
+  color: var(--p-color);
+}
+
+[data-theme="dark"] a {
+  color: var(--p-color);
+}
+
+[data-theme="dark"] a:hover {
+  color: var(--secondary-color);
+}
+
+/* ---- Border dividers used in About section ---- */
+[data-theme="dark"] .featured-border-start {
+  border-left-color: var(--border-color);
+}
+
+/* ---- Navbar button (dark mode) ---- */
+[data-theme="dark"] .is-sticky .theme-toggle-btn {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+[data-theme="dark"] .theme-toggle-btn {
+  border-color: rgba(240,244,248,0.6);
+  color: #f0f4f8;
+}
+
+[data-theme="dark"] .theme-toggle-btn:hover {
+  background: #f0f4f8;
+  color: var(--secondary-color);
+}

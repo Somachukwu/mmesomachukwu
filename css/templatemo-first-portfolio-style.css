@@ -709,6 +709,40 @@ strong {
 
 
 /*---------------------------------------
+  FOCUS OUTLINE REMOVAL (popup image)
+-----------------------------------------*/
+.projects-thumb,
+.projects-thumb:focus,
+.projects-thumb:active,
+.projects-thumb:focus-within {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.projects-thumb a,
+.projects-thumb a:focus,
+.projects-thumb a:active,
+.projects-thumb a:focus-visible,
+.popup-image,
+.popup-image:focus,
+.popup-image:active,
+.popup-image:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.projects-image,
+.projects-image:focus,
+.projects-image:active,
+.projects-image:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+
+/*---------------------------------------
   PROJECTS              
 -----------------------------------------*/
 .projects-thumb {

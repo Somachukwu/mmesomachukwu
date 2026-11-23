@@ -22,11 +22,40 @@ $(document).ready(function() {
         // you don't need to add "opener" option if this code matches your needs, it's defailt one.
         return openerElement.is('img') ? openerElement : openerElement.find('img');
         }
+      },
+      callbacks: {
+        open: function() {
+          if (document.activeElement && typeof document.activeElement.blur === 'function') {
+            document.activeElement.blur();
+          }
+        },
+        close: function() {
+          $('.popup-image, .projects-image, .projects-thumb').blur();
+          if (document.activeElement && typeof document.activeElement.blur === 'function') {
+            document.activeElement.blur();
+          }
+        },
+        afterClose: function() {
+          $('.popup-image, .projects-image, .projects-thumb').blur();
+          if (document.activeElement && typeof document.activeElement.blur === 'function') {
+            document.activeElement.blur();
+          }
+        }
       }
     });
   };
   
   // Call the functions 
   magnifPopup();
+
+  // Prevent persistent focus ring after clicking or viewing image
+  $('.popup-image').on('click mouseup', function() {
+    var $el = $(this);
+    setTimeout(function() {
+      $el.blur();
+      $el.find('img').blur();
+      $el.closest('.projects-thumb').blur();
+    }, 50);
+  });
 
 });
