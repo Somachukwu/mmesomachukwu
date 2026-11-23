@@ -747,7 +747,14 @@ strong {
 }
 
 .projects-title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.projects-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--p-color);
+  margin-bottom: 15px;
 }
 
 .projects-tag {
