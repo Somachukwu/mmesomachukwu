@@ -72,6 +72,27 @@
   background: transparent;
 }
 
+/* Keep pre-scroll navbar elements white in dark mode */
+[data-theme="dark"] .navbar .custom-btn {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .navbar .custom-btn:hover {
+  background: #ffffff;
+  color: var(--secondary-color);
+}
+
+[data-theme="dark"] .navbar-icon {
+  background: #ffffff;
+  color: #000000;
+}
+
+[data-theme="dark"] .navbar-brand,
+[data-theme="dark"] .navbar-brand:hover {
+  color: #ffffff;
+}
+
 [data-theme="dark"] .is-sticky,
 [data-theme="dark"] .is-sticky .navbar .container {
   background: #161b22;
