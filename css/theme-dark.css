@@ -69,7 +69,7 @@
 
 /* ---- Navbar ---- */
 [data-theme="dark"] .navbar .container {
-  background: rgba(22, 27, 34, 0.98);
+  background: transparent;
 }
 
 [data-theme="dark"] .is-sticky,
