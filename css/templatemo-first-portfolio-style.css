@@ -740,6 +740,8 @@ strong {
 
 .projects-image {
   border-radius: var(--border-radius-medium);
+  border: 0;
+  outline: none;
   display: block;
   width: 100%;
   transform: rotate(10deg) translateY(80px);
